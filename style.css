@@ -37,11 +37,8 @@ body {
 .text {
 	z-index: 900;
 	opacity: 1;
-
 	padding: 10px;
-	height: 420px;
 	margin-top: 8rem;
-	background-color: #0009;
 	transition: all 0.5s ease-in-out;
 }
 .link-btn {
@@ -71,6 +68,7 @@ body {
 }
 .invite-link {
 	opacity: 0;
+	text-align: center;
 	transition: all 0.5s ease-in-out;
 	margin: 10px;
 	color: #38ef7d;
