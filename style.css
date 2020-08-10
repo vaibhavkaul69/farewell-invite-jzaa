@@ -1,0 +1,39 @@
+/** @format */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.main-content-lg-xl {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #0009, #000),
+		url('./group.jpg') center no-repeat;
+	background-size: cover;
+}
+.main-content-md-sm {
+	background-color: #0e0e0e;
+	display: none;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 10px;
+	grid-gap: 10px;
+	transition: all 0.5s ease-in-out;
+}
+.image {
+	height: 200px;
+	width: 200px;
+	opacity: 0;
+	margin: 10px auto;
+	transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+	.main-content-lg-xl {
+		display: none;
+	}
+	.main-content-md-sm {
+		display: grid;
+	}
+}
