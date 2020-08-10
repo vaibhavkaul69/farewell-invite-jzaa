@@ -36,7 +36,7 @@ body {
 .text {
 	z-index: 900;
 	opacity: 0;
-	margin-top: 4rem;
+
 	height: 500px;
 	padding: 10px;
 	transition: all 0.5s ease-in-out;
@@ -106,7 +106,8 @@ body {
 	width: 100px;
 	margin: 0px auto;
 }
-.text > h1 {
+.text > h1,
+.text-lg > h1 {
 	color: #2193b0;
 	font-size: 3rem;
 	font-family: 'Open Sans', sans-serif;
@@ -117,6 +118,9 @@ body {
 }
 .text > h3,
 h4,
+h5,
+.text-lg > h4,
+h3,
 h5 {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
@@ -136,30 +140,29 @@ h5 {
 	margin: 10px auto;
 	transition: all 1s ease-in-out;
 }
-.arsh-img {
+.arsh-img,
+.ashish-img {
 	transform: translateX(-2000px);
 }
-.ashish-img {
-	transform: translateX(2000px);
-}
+
 .manchanda-img,
 .nishchay-img {
 	transform: scale(0);
 }
 
 .nitin-img,
-.piyush-img,
-.yashika-img {
+.piyush-img {
 	transform: scale(0) rotate(0deg);
 }
 .sachin-img,
-.sweety-img {
+.sweety-img,
+.yashika-img {
 	transform: translateY(-2000px);
 }
 
 @media only screen and (max-width: 800px) {
 	body {
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 	.main-content-lg-xl {
 		display: none;
