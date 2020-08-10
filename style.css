@@ -36,7 +36,6 @@ body {
 .text {
 	z-index: 900;
 	opacity: 0;
-
 	height: 500px;
 	padding: 10px;
 	transition: all 0.5s ease-in-out;
@@ -54,6 +53,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 100;
+	margin-top: 30px;
 	border-radius: 5px;
 	padding: 8px;
 	cursor: pointer;
@@ -106,8 +106,7 @@ body {
 	width: 100px;
 	margin: 0px auto;
 }
-.text > h1,
-.text-lg > h1 {
+.text > h1 {
 	color: #2193b0;
 	font-size: 3rem;
 	font-family: 'Open Sans', sans-serif;
@@ -116,16 +115,31 @@ body {
 
 	padding: 10px;
 }
+.text-lg > h1 {
+	color: #2193b0;
+	font-size: 6rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px;
+}
 .text > h3,
 h4,
-h5,
-.text-lg > h4,
-h3,
 h5 {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
-	font-family: 1rem;
+	font-size: 1rem;
+	text-align: center;
+	padding: 10px;
+}
+.text-lg > h4,
+.text-lg > h3,
+.text-lg > h5 {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
 	text-align: center;
 	padding: 10px;
 }
@@ -188,10 +202,10 @@ h5 {
 
 @media only screen and (max-width: 360px) {
 	.main-content-md-sm {
-		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 	}
 	.image {
-		height: 140px;
-		width: 140px;
+		height: 130px;
+		width: 130px;
 	}
 }

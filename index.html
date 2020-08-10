@@ -28,10 +28,12 @@
 				<h5>Date : 11/08/2020 <br />Time : 8:00 PM - 10:00 PM</h5>
 				<h5>Farewell Day : 3/3</h5>
 				<div class="link-btn">
-					<button class="event-btn">
+					<button class="event-btn btn-lg">
 						Get Invite Link
 					</button>
-					<a href="https://meet.google.com/tze-ecud-uwk" class="invite-link"
+					<a
+						href="https://meet.google.com/tze-ecud-uwk"
+						class="invite-link link-lg"
 						>Welcome To The Diagon Alley. <span class="icon">&#9829;</span></a
 					>
 				</div>
@@ -52,10 +54,12 @@
 					<h5>Date : 11/08/2020 <br />Time : 8:00 PM - 10:00 PM</h5>
 					<h5>Farewell Day : 3/3</h5>
 					<div class="link-btn">
-						<button class="event-btn">
+						<button class="event-btn btn-sm">
 							Get Invite Link
 						</button>
-						<a href="https://meet.google.com/tze-ecud-uwk" class="invite-link"
+						<a
+							href="https://meet.google.com/tze-ecud-uwk"
+							class="invite-link link-sm"
 							>Welcome To The Diagon Alley. <span class="icon">&#9829;</span></a
 						>
 					</div>
@@ -85,10 +89,15 @@
 		const sweety = document.querySelector('.sweety-img');
 		const yashika = document.querySelector('.yashika-img');
 		const text = document.querySelector('.text');
-		const inviteLink = document.querySelector('.invite-link');
-		document.querySelector('.event-btn').addEventListener('click', (e) => {
+		const inviteLink_sm = document.querySelector('.link-sm');
+		const inviteLink_lg = document.querySelector('.link-lg');
+		document.querySelector('.btn-sm').addEventListener('click', (e) => {
 			e.target.style.display = 'none';
-			inviteLink.style.opacity = '1';
+			inviteLink_sm.style.opacity = '1';
+		});
+		document.querySelector('.btn-lg').addEventListener('click', (e) => {
+			e.target.style.display = 'none';
+			inviteLink_lg.style.opacity = '1';
 		});
 
 		setTimeout(() => {
