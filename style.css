@@ -35,6 +35,7 @@ body {
 	background: rgba(0, 0, 0, 0.6);
 }
 .text {
+	position: fixed;
 	z-index: 900;
 	opacity: 1;
 	padding: 10px;
@@ -166,10 +167,10 @@ h5 {
 
 @media only screen and (max-width: 360px) {
 	.main-content-md-sm {
-		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 	}
 	.image {
-		height: 100px;
-		width: 100px;
+		height: 140px;
+		width: 140px;
 	}
 }
