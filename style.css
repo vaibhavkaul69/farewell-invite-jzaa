@@ -8,6 +8,7 @@
 
 body {
 	overflow: hidden;
+	background: #0e0e0e;
 }
 .main-content-lg-xl {
 	width: 100%;
@@ -36,7 +37,9 @@ body {
 }
 .text {
 	z-index: 900;
-	opacity: 1;
+	opacity: 0;
+	background-color: #0009;
+	height: 500px;
 	padding: 10px;
 	margin-top: 4rem;
 	transition: all 0.5s ease-in-out;
@@ -133,9 +136,28 @@ h5 {
 .image {
 	height: 200px;
 	width: 200px;
-	opacity: 0;
 	margin: 10px auto;
 	transition: all 1s ease-in-out;
+}
+.arsh-img {
+	transform: translateX(-2000px);
+}
+.ashish-img {
+	transform: translateX(2000px);
+}
+.manchanda-img,
+.nishchay-img {
+	transform: scale(0);
+}
+
+.nitin-img,
+.piyush-img,
+.yashika-img {
+	transform: translateY(-2000px);
+}
+.sachin-img,
+.sweety-img {
+	transform: scale(0) rotate(0deg);
 }
 
 @media only screen and (max-width: 800px) {
